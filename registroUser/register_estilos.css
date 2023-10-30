@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    color: inherit;
+}
+
+:root {
+    --color-principal: rgb(231, 124, 37);
+    --color-secundario: #fff;
+}
+
+
+
+body {
+    background-color: #e4e4e4;
+}
+
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    transition: 0.5s;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+header .navbar {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header .navbar .nav-logo .logo {
+    position: relative;
+    padding: 15px 32px 15px;
+    color: #000;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+header .navbar .nav-logo .logo .span_logo {
+    color: var(--color-principal);
+    margin-left: 10px;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+header .navbar .nav-ayuda {
+    display: flex;
+}
+
+
+header .navbar .nav-ayuda i {
+    display: flex;
+    align-items: center;
+    color: var(--color-principal);
+    padding: 10px;
+    font-size: 25px;
+}
+
+
+header .navbar .nav-ayuda a {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 500; 
+}
+
+/* PAGINA DE REGISTER (ESTILOS) */
+
+
+
+.h1-register {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    color: #000;
+    text-decoration:underline 3px var(--color-principal);
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.register {
+    background-color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 16.9%;
+    width: 900px;
+    height: 550px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.form-register {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display:block;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: -100px;
+}
+
+
+.container-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+input {
+    color: #000;
+    background-color: transparent;
+    border: none;
+    border: 2px solid #e4e4e4;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 100;
+    outline: none;
+    width: 49%;
+    height: 25%;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 55px;
+    margin: auto;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    background-color: var(--color-principal);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background-color: var(--color-principal);
+}

@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    color: inherit;
+}
+
+
+:root {
+    --color-principal: rgb(231, 124, 37);
+    --color-secundario: #dfdfdf;
+    --color-h2: #3f3e3e;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+
+body::-webkit-scrollbar {
+    width: 12px;                  /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #3c3838;          /* color of the tracking area */
+  } 
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #fff;       /* color of the scroll thumb */
+    border-radius: 20px;            /* roundness of the scroll thumb */
+    border: 2px solid rgb(41, 38, 38);    /* creates padding around scroll thumb */
+  }
+
+/*====================================================================================================== HEADER STYLE =========================================================================================================*/
+
+.top-container{
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background-color: var(--color-principal)
+}
+
+.top-container-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+
+.top-inner-p {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 30px;
+}
+
+
+.top-inner-redes {
+    font-size: 20px;
+    height: 100%;
+    width: 30%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header {
+    padding: 2rem 15%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    transition: 0.5s;
+    background-color: var(--color-h2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+header .header-bar .header-logo .logo {
+    position: relative;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+header .header-bar .header-logo .logo .span_logo {
+    color: var(--color-principal);
+    margin-left: 10px;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+header .header-bar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+header .header-bar .header-search {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+
+header .header-bar .header-searchBar {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-principal);
+    background-color: var(--color-h2);
+    padding-left: 10px;
+    color: #fff;
+    font-size: 17px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.header-searchBar::placeholder {
+    color: #fff;
+  }
+
+header .header-bar .header-search i {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 10%;
+    height: 100%;
+    font-size: 20px;
+    background-color: var(--color-principal);
+    cursor: pointer;
+}
+
+
+header .header-bar .header-user-carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+header .header-bar .header-user-carrito a {
+    color: #fff;
+    padding: 15px;
+    font-size: 17px;
+}
+
+
+.nav-menu {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--color-h2);
+    padding: 2rem 20%;
+    transition: 0.5s;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: capitalize;
+    background-color: var(--color-principal);
+}
+
+
+.nav-menu a:hover {
+    color: #fff;
+}
+
+
+.section-content {
+    padding: 2rem 15%;
+    display: flex;
+    width: 100%;
+    height: 800px;
+    background-color: #e4e2e2;
+    background-image: url(../imagenes/1058-banner-arma-tu-pc-1290.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+/*
+.text-banner {
+    top: 10%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+*/
+
+/*
+.text-banner h2 {
+    color: #615252;
+    left: 2%;
+    position: relative;
+    text-transform: capitalize;
+    font-size: 5rem;
+}
+
+/*
+.text-banner h1 {
+    padding: 10px;
+    position: absolute;
+    top: 10%;
+    text-transform: capitalize;
+    font-size: 6rem;
+}
+
+.text-banner h1 span {
+    margin-left: 10px;
+    color: #8732f5;
+}
+
+
+
+.typing {
+    margin-left: 40px;
+    color: #3c3838;
+}
+*/
+
+.text-banner a {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: #000;
+    padding: 2rem 4.5rem;
+    border-radius: 4rem;
+    background-color:var(--color-principal);
+    transition: 0.5s;
+    position: absolute;
+    top: 80%;
+    left: 69%;
+    opacity: 1;
+}
+
+.text-banner a:hover {
+    transform: scale(1.1);
+    opacity: 0.9;  
+}
+
+.text-banner a i {
+    color: #fff;
+    position: relative;
+    margin-left: 10px;
+}
+
+
+
+/*====================================================================================================== CONTAINER STYLE =========================================================================================================*/
+.container {
+    padding: 2rem 10%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secundario);
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+/*--- section:nth-child(even) {
+    background-color: #e4e2e2;
+}
+------*/
+
+.container h2 {
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-transform: capitalize;
+    color: var(--color-h2);
+    font-weight: 500;
+    font-style:italic;
+    font-size: 30px;
+    margin-top: 50px;
+    padding: 2rem 5%;
+    border-bottom: 1px solid var(--color-principal);
+}
+
+
+
+/*====================================================================================================== SERVICES STYLE =========================================================================================================*/
+.containerCard {
+    padding: 2rem 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    grid-gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0,9s;
+}
+
+
+.container .containerCard .card {
+    border-radius: 5px;
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.container .containerCard .card:hover {
+    transform: scale(1.1 , 1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.container .containerCard .card .icon {
+    display: flex;
+    color: #fff;
+    font-size: 85px;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid grey;
+    background-image: url(/imagenes/94_08-09-2023-02-09-21-ryzen-3-3200.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.container .containerCard .card h3 {
+    display: flex;
+    color: var(--color-h2);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+    width: 100%;
+    height: auto;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.container .containerCard .card p {
+    display: flex;
+    color: var(--color-h2);
+    font-size: 15px;
+    width: 100%;
+    height: auto;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.container .containerCard .card span {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+/*====================================================================================================== PORTFOLIO STYLE =========================================================================================================*/
+
+/*====================================================================================================== CONTACT STYLE =========================================================================================================*/
+.container form {
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+    padding: 1rem 5%;
+}
+
+
+.container form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.container form .input-box input {
+    color: #fff;
+    font-size: 18px;
+    width: 49%;
+    padding: 0.5rem;
+    margin: .7rem 0;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+}
+
+
+input::placeholder {
+    color: #fff;
+}
+
+
+.container form textarea {
+    color: #fff;
+    font-size: 18px;
+    width: 100%;
+    padding: 1.5rem;
+    margin: .7rem 0;
+    border-radius: 10px;
+    resize: none;
+    background-color: #ddd;
+}
+
+
+.container form .btnEnviar {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    color: #3c3838;
+    margin-top: 20px;
+    padding: 1.7rem 3.5rem;
+    border: none;
+    border-radius: 4rem;
+    background-color: #e4e2e2;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.container form .btnEnviar:hover {
+    transform: scale(1.1);
+    background-color: #d7d2d2;
+}
+
+
+
+/*====================================================================================================== FOOTER STYLE =========================================================================================================*/
+footer {
+    padding: 1rem 10%;
+    justify-content: space-between;
+    width: 100%;
+    height: 140px;
+    background-color: var(--color-h2);
+}
+
+
+footer .footerMenu {
+    display: flex;
+}
+
+
+footer .footerMenu .footer-logo {
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer .footerMenu .footer-logo .f-logo {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+
+footer .footerMenu .footer-logo span {
+    color: var(--color-principal);
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+
+footer .footerMenu .footer-contacto {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+footer .footerMenu .footer-contacto i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff
+}
+
+
+footer .footerMenu .footer-contacto i p {
+    width: 100%;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+}
+
+
+footer .footerMenu .footer-contacto span {
+    display: block;
+}
+
+
+footer .footerMenu .footer-contacto span i{
+    color: var(--color-principal);
+}
+
+
+footer .footerMenu .footer-links {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer .footerMenu .footer-links a {
+    color: var(--color-principal);
+    font-size: 25px;
+    padding: 40px;
+}
